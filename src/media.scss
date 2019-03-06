@@ -1,0 +1,144 @@
+@media only screen and (max-width: 1086px) {
+
+  .slick-arrow{
+    height: 56px;
+    width: 47px;
+      &.slick-prev{
+        background-position: left 14px center;
+      }
+      &.slick-next{
+        background-position: right 14px center;
+      }
+  }
+
+  .carousel-slide-wrap{
+    width: 33.33%;
+  }
+
+  .event-card{
+    max-width: 100%;
+  }
+
+  .carousel{
+    padding: 0 45px;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+  .events-section{
+    padding: 15px 0 40px;
+      &:before{
+        height: 136px;
+        background-position: center top;
+      }
+  }
+
+  .slick-arrow{
+    display: none;
+  }
+
+  .carousel{
+    padding: 0;
+    margin: 5px -11px 0;
+  }
+
+  .carousel-slide-wrap{
+    width: 50%;
+    padding: 4px;
+      &:nth-child(n + 7){
+        display: none;
+      }
+  }
+
+  .carousel-nav-wrap{
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 22px -15px 0 -15px;
+      &:before{
+        opacity: 0;
+      }
+  }
+
+  .btn-link.__nav-theme{
+    display: inline-block;
+    padding: 18px 25px;
+      &:before{
+        background-color: #eeff41;
+        opacity: 1;
+      }
+  }
+
+  .btn-link{
+      &.__search-theme{
+        border: none;
+        padding: 0;
+        background-repeat: no-repeat;
+        -webkit-background-size: 20px;
+        background-size: 20px;
+        background-position: center;
+        background-image: url(img/search_icon.png);
+        width: 30px;
+        height: 30px;
+        margin: 0 20px 0 0;
+          .btn-link-title{
+            display: none;
+          }
+      }
+  }
+
+  .section-title{
+    font-size: 15px;
+  }
+
+  .section-title-wrap{
+    padding: 8px 0 0;
+  }
+
+  .panel-settings-btn{
+    display: inline-block;
+  }
+
+  .event-card{
+    border-radius: 0;
+  }
+
+  .event-card-content {
+    padding: 12px 10px;
+    height: 122px;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  .event-card-preview{
+    height: 80px;
+  }
+
+}
+
+@media (any-hover: hover) {
+
+  .nav-link{
+      &:hover{
+        letter-spacing: .05em;
+      }
+  }
+
+  .event-card{
+      &:hover{
+        -webkit-box-shadow: 0px 5px 20px -5px rgba(0,0,0,1);
+        -moz-box-shadow: 0px 5px 20px -5px rgba(0,0,0,1);
+        box-shadow: 0px 5px 20px -5px rgba(0,0,0,1);
+          .event-card-preview{
+              img{
+                transform: scale(1.1);
+              }
+          }
+      }
+  }
+
+}
